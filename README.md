@@ -1,6 +1,8 @@
 # OcuCount
 A tiny NodeJS module to perform wordcounts on single or arrays of strings.
 
+[![npm version](https://badge.fury.io/js/ocucount.svg)](https://badge.fury.io/js/ocucount)
+
 #Installation
 Installation is very simple due to OcuCount being on NPM. Simply type: `npm install ocucount` from a console in the project directory then add `var ocucount = require('ocucount');` to the top of your project file.
 
