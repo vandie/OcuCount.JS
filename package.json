@@ -1,0 +1,27 @@
+{
+  "name": "ocucount",
+  "version": "1.0.0",
+  "description": "A tiny node module to perform wordcounts on single or arrays of strings.",
+  "main": "count.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vandie/OcuCount.git"
+  },
+  "keywords": [
+    "word",
+    "count",
+    "array",
+    "string",
+    "nodejs",
+    "node"
+  ],
+  "author": "Michael Van Der Velden",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vandie/OcuCount/issues"
+  },
+  "homepage": "https://github.com/vandie/OcuCount#readme"
+}
