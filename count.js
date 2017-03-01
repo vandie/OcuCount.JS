@@ -48,4 +48,4 @@ var count = {
     }
 }
 
-module.exports = count;
+exports = count;
