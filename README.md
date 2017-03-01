@@ -30,7 +30,7 @@ Simply replace the test string with the string you want to perform the wordcount
 ###For a multiple strings
 OcuCount can also be used on arrays of stings. For example:
 ```
-var wordcount =ocucount.count(['What are you doing my friend?','You are a good friend.','But I love you!']);
+var wordcount = ocucount.count(['What are you doing my friend?','You are a good friend.','But I love you!']);
 ```
 In this example, wordcount would be:
 ```
