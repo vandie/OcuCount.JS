@@ -6,10 +6,10 @@ A tiny NodeJS module to perform wordcounts on single or arrays of strings.
 #Installation
 Installation is very simple due to OcuCount being on NPM. Simply type: `npm install ocucount` from a console in the project directory then add `var ocucount = require('ocucount');` to the top of your project file.
 
-##Usage
+#Usage
 Using OcuCount is very simple as there is only one function that you need to use. Usage does differ slightly depending on the number of strings however...
 
-###For a single strings
+##For a single strings
 For single strings simply use the following function:
 ```
 var wordcount = ocucount.count('What are you doing my friend? you are a good friend');
@@ -29,7 +29,7 @@ Simply replace the test string with the string you want to perform the wordcount
 
 ```
 
-###For multiple strings
+##For multiple strings
 OcuCount can also be used on arrays of stings. For example:
 ```
 var wordcount = ocucount.count(['What are you doing my friend?','You are a good friend.','But I love you!']);
