@@ -45,7 +45,7 @@ In this example, wordcount would be:
     word { word: 'good', count: 1 },
     word { word: 'but', count: 1 },
     word { word: 'i', count: 1 },
-    word { word: 'hate', count: 1 }
+    word { word: 'love', count: 1 }
 ]
 ```
 
