@@ -51,6 +51,9 @@ var count = {
      * @param {String|String[]} s Either a single string or array of strings on which to perform the word count
      */
     count: function count(s){
+        //the following 2 lines remove the amazingly annoying persistance bug.
+        this.words= new Array();
+        this.Words= new Array();
         this.genWordList(s);
         this.words.forEach(function(w) {
             if(w != ''){
