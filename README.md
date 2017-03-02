@@ -51,4 +51,5 @@ In this example, wordcount would be:
 ]
 ```
 
+Follow me on twitter [@MVD_Vandie](https://twitter.com/MVD_Vandie)
 Enjoy. :D

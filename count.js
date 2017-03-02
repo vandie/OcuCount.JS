@@ -1,14 +1,26 @@
-word = function(w){
-    this.word = w || '';
+/**
+ * Contains a single word string in lower case as well as it's number of occurences.
+ * @class
+ * @param {String} w A single word as a string.
+ */
+function word(w){
+    this.word = w.toLowerCase() || '';
     this.count = 1;
 }
 
+/**
+ * Contains all word counting functions and variables
+ */
 var count = {
     words: new Array(),
     Words: new Array(),
 
-    get : function(w) {
-        //Returns index of word in array or -1 if it isn't there
+    /**
+     * Returns either an index in the current word list or, in the case that it is not found, returns -1
+     * @function
+     * @param {String} w A single word to search for. Is automatically converted to lower case.
+     */
+    get : function get(w) {
         var handled = 0;
         var ci = -1;
         this.Words.forEach(function(ww,i){
@@ -19,9 +31,12 @@ var count = {
         },this);
         return ci;
     },
-
-    genWordList : function(strings){
-        //generates a array containing every word in any of the strings that were handed over
+    /**
+     * Returns an array of every word (including repeats) in the provided string/s in lower case.
+     * @function
+     * @param {String|String[]} strings Either a single string or array of strings to be converted to an array of words
+     */
+    genWordList : function genWordList(strings){
         text = strings.constructor == Array ? strings : [strings];
         var self = this;
         text.forEach(function(t){
@@ -31,10 +46,12 @@ var count = {
             });
         },this);
     },
-
-    count: function(strings){
-        //call this count occurences of each word over one or more strings
-        this.genWordList(strings);
+    /**
+     * Returns an array of objects containing each word, from the given string/s, in lower case and the number of occurences.
+     * @param {String|String[]} s Either a single string or array of strings on which to perform the word count
+     */
+    count: function count(s){
+        this.genWordList(s);
         this.words.forEach(function(w) {
             if(w != ''){
                 if(this.get(w) === -1){
