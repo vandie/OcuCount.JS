@@ -1,6 +1,6 @@
 {
   "name": "ocucount",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A tiny node module to perform wordcounts on single or arrays of strings.",
   "readme": "README.md",
   "main": "count.js",

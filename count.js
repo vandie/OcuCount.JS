@@ -9,6 +9,20 @@ function word(w){
 }
 
 /**
+ * Contains a single word string in lower case as well as it's number of occurences.
+ * @function
+ * @param {word} a First word to compare.
+ * @param {word} b Second word to compare.
+ */
+function comparewords(a,b) {
+  if (a.count < b.count)
+    return -1;
+  if (a.count > b.count)
+    return 1;
+  return 0;
+}
+
+/**
  * Contains all word counting functions and variables
  */
 var count = {
@@ -65,6 +79,17 @@ var count = {
             }
         }, this);
         return(this.Words);
+    },
+    /**
+     * Sorts an array of words returned by OcuCount. (Sorts least used to most used)
+     * @function
+     * @param {word[]} wordsToSort An array of words intended for sorting.
+     */
+    sortWords : function sortWords(wordsToSort){
+        if(wordsToSort.constructor == Array )
+            return(wordsToSort.sort(comparewords));
+        else
+            new Error('Invalid array of words given to ocucount.sortWords');
     }
 }
 
