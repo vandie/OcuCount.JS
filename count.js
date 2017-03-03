@@ -54,7 +54,7 @@ var count = {
         text = strings.constructor == Array ? strings : [strings];
         var self = this;
         text.forEach(function(t){
-            tWords = String(t).replace(/[.,\/#!?$%\^&\*;:{}=\-_`~()]/g," ").split(' ');
+            tWords = String(t).replace(/[.,\/#!?$%\^&\*;:{}=\-_`"~()]/g," ").split(' ');
             tWords.forEach(function(aWord){
                 self.words.push(aWord.toLowerCase());
             });
