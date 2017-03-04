@@ -9,7 +9,7 @@ function word(w){
 }
 
 /**
- * Contains a single word string in lower case as well as it's number of occurences.
+ * Compares 2 words and tells you which occurs more often.
  * @function
  * @param {word} a First word to compare.
  * @param {word} b Second word to compare.
