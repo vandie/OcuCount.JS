@@ -87,9 +87,12 @@ var count = {
      */
     sortWords : function sortWords(wordsToSort){
         if(wordsToSort.constructor == Array )
-            return(wordsToSort.sort(comparewords));
+            if(wordsToSort[0] instanceof word)
+                return(wordsToSort.sort(comparewords));
+            else
+                throw new Error('Ocucount Error: Array given to sortWords does not contain words as rrequired...');
         else
-            new Error('Invalid array of words given to ocucount.sortWords');
+            throw new Error('Ocucount Error: sortWords takes an array of words as input...');
     }
 }
 
